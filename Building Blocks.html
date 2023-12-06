@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Building Blocks</title>
+
+<style type="text/css">
+	
+
+body { background:#f3ac3c;
+       margin:0;
+       height:100vh;
+       display:flex;
+       justify-content:center;
+       align-items:center; }
+
+div { position:absolute;
+      width:600px;
+      height:400px; }
+
+
+span:nth-child(1) { position:absolute;
+	                width: 215px;
+	                height: 75px;
+	                background: #1a4341;
+	                transform: translate(calc(-85% - 17.5px),calc(-92.5% - 17.5px));
+	                border-radius: 15px 15px 15px 0;
+	                top: 50%;
+	                left: 50%;
+ }
+
+span:nth-child(1):before { content:'';
+                           position:absolute;
+                           width:150px;
+                           height:65px;
+                           background:#1a4341;
+                           bottom:-65px;
+                           border-radius:0 0 15px 15px; }
+
+
+span:nth-child(2) { position:absolute;
+	                width: 215px;
+	                height: 75px;
+	                background: #1a4341;
+	                transform: translate(calc(85% + 17.5px),calc(92.5% + 17.5px));
+	                border-radius: 15px 0 15px 15px;
+	                top: 50%;
+	                right: 50%;
+ }
+
+span:nth-child(2):before { content:'';
+                           position:absolute;
+                           width:150px;
+                           height:65px;
+                           background:#1a4341;
+                           top:-65px;
+                           right: 0;
+                           border-radius:15px 15px 0 0; }
+
+span:nth-child(1):after { content:'';
+                          width:50px;
+                          height:50px;
+                          position:absolute;
+                          background:#1a4341;
+                          bottom:-45px;
+                          left:145px; }
+
+span:nth-child(2):after { content:'';
+                          width:50px;
+                          height:50px;
+                          position:absolute;
+                          background:#1a4341;
+                          top:-45px;
+                          right:145px; }
+
+
+p { position:absolute;
+    background:#f3ac3c;
+    width:100px;
+    height:100px;
+    right:150px;
+    top:-120px;
+    z-index: 333;
+    border-radius: 15px 0 15px 0;
+     }
+
+
+</style>
+
+</head>
+<body>
+
+<div>
+	
+<span></span>
+<span>
+	
+<p></p>
+
+</span>
+
+
+</div>
+
+
+</body>
+</html>

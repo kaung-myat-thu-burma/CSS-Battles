@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cloaked Spirits</title>
+
+<style type="text/css">
+	
+
+body { background:#62306D;
+	margin: 0;
+       height:100vh;
+       display:flex;
+       justify-content:center;
+       align-items:flex-end;
+       flex-direction:row;
+        }
+
+
+div { width:200px;
+      height:200px;
+      background:#F7EC7D;
+      position:relative; }
+
+.two { height:400px; }
+
+
+
+
+div:before { content:'';
+             width:120px;
+             height:120px;
+             border-radius:50%;
+             border:40px solid #AA445F;
+             position:absolute;
+             top: -50%;
+             background: #E38F66;
+
+              }
+
+
+.two:before { transform:translateY(50%);
+              border-color:#E38F66;
+              background:#AA445F; }
+
+</style>
+
+
+</head>
+<body>
+
+
+<div class = "one"></div>
+<div class = "two"></div>
+<div class = "three"></div> 
+
+
+
+
+
+
+
+
+
+</body>
+</html>

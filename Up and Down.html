@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Up and Down</title>
+
+<style type="text/css">
+	
+
+body { background:#62306D;
+       
+        }
+
+div { background:#E7EC7D;
+
+      width: 150px;
+      height: 170px;
+      border-radius:150px 150px 0 0 ;
+      position:absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-100%);}
+
+div:before,div:after { width:150px;
+                       height:170px;
+                       border-radius:0 0 150px 150px;
+                       background:#E7EC7D;
+                       content: '';
+                        }
+
+
+div:before { position:absolute;
+             left:-100%;
+             bottom:-100%; }
+ 
+div:after { position:absolute;
+            right:-100%;
+            bottom:-100%; }
+
+
+</style>
+
+
+</head>
+<body>
+
+<div> </div>
+
+
+</body>
+</html>

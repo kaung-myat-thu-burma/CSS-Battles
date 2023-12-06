@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Batmicky</title>
+
+<style type="text/css">
+	
+body { background:#191919;
+       margin:0;
+       height:100vh;
+       display:flex;
+       justify-content:center;
+       align-items:center; }
+
+
+div { background:#F2AD43;
+      width:400px;
+      height:140px;
+      position:absolute; }
+
+div:before { content:'';
+             position:absolute;
+             width:250px;
+             height:250px;
+             border-radius: 50%;
+             background: #191919;
+             bottom: -200px;
+             left: 50%;
+             transform: translateX(calc(25px  - 100%));
+              }
+
+
+
+div:after { content:'';
+             position:absolute;
+             width:250px;
+             height:250px;
+             border-radius: 50%;
+             background: #191919;
+             bottom: -200px;
+             right: 50%;
+             transform: translateX(calc(-25px + 100%) );
+              }
+
+
+span:nth-child(1)  { position:absolute;
+        width:100%;
+        height:100%;
+        top:0;
+        left:0; }
+
+span:nth-child(1):before { position:absolute;
+                           content:'';
+                           width:150px;
+                           height: 150px;
+                           border-radius: 50%;
+                           top: 0;
+                           left: -75px;
+                           content: '';
+                           background: #191919;
+                            }
+
+
+
+span:nth-child(1):after { position:absolute;
+                           content:'';
+                           width:150px;
+                           height: 150px;
+                           border-radius: 50%;
+                           top: 0;
+                           right: -75px;
+                           content: '';
+                           background: #191919;
+                            }
+
+span:nth-child(2){ position:absolute;
+                   width:130px;
+                   height:50px;
+                   background:#191919;
+                   border-radius:0 0 25px 25px;
+                   top:0;
+                   left:50%;
+                   transform:translate(-50%,0); }
+
+
+span:nth-child(3) { position:absolute;
+                    width:35px;height: 35px;
+                    top:15px;
+                    left:50%;
+                    transform: translateX(-50%);
+                    background:#F2AD43;
+                    border-radius:15px 15px 0 0 ; }
+
+span:nth-child(3):before { position:absolute;
+                           width:20px;
+                           height:20px;
+                           background:#F2AD43;
+                           border-radius:50%;
+                           top:-10px;
+                           left:-10px;
+                           content:''; }
+
+
+
+span:nth-child(3):after { position:absolute;
+                           width:20px;
+                           height:20px;
+                           background:#F2AD43;
+                           border-radius:50%;
+                           top:-10px;
+                           right:-10px;
+                           content:''; }
+
+
+
+</style>
+
+</head>
+<body>
+
+<div>
+
+<span></span>
+<span></span>
+<span></span>
+
+</div>
+
+
+</body>
+</html>

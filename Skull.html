@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Skull</title>
+
+<style type="text/css">
+	
+body { background:#191919;
+       margin:0;
+       height:100vh;
+       display:flex;
+       justify-content: center;
+       align-items: center;
+      }
+
+div  { background:#4F77FF;
+       width:250px;
+       height:225px;
+       border-radius:300px 300px 75px 75px;
+       position:absolute; 
+       transform: translateY(-75px)}
+
+span:nth-child(1){ background:#4F77FF;
+                   width:150px;
+                   height:65px;
+                   position:absolute;
+                   bottom:-65px;
+                   border-radius:0 0 25px 25px;
+                   left:50%;
+                   transform:translateX(-50%) }
+
+
+span:nth-child(3) { position:absolute;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 30px 30px 0 0;
+                    bottom :-65px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background:#191919;
+                     } 
+
+
+span:nth-child(3):before { content:'';
+                           width:20px;
+                           height:20px;
+                           border-radius:30px 30px 0 0;
+                           left:-30px;
+                           background:#191919;
+                           position:absolute; }
+
+
+span:nth-child(3):after { content:'';
+                           width:20px;
+                           height:20px;
+                           border-radius:30px 30px 0 0;
+                           right:-30px;
+                           background:#191919;
+                           position:absolute; }
+
+
+div:before { position:absolute;
+             content:'';
+             bottom:30px;
+             left:50%;
+             transform:translateX(-115%);
+             background:#191919;
+             width:85px;
+             height:85px;
+             border-radius:50%; }
+
+
+div:after  { position:absolute;
+             content:'';
+             bottom:30px;
+             right:50%;
+             transform:translateX(115%);
+             background:#191919;
+             width:85px;
+             height: 85px;
+             border-radius:50%; }
+
+
+span:nth-child(2) { position:absolute;
+                    width:50px;
+                    height:50px;
+                    border-radius:50%;
+                    background:#191919;
+                    transform:translate(-50%,50%);
+                    bottom:0;
+                    left:50%; }
+
+
+
+
+
+</style>
+
+</head>
+<body>
+
+<div>
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+
+
+</body>
+</html>

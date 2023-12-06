@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Odoo</title>
+
+<style type="text/css">
+	
+body {margin: 0;
+      height: 100vh;
+      background: #191919;
+      display: flex;
+      justify-content: center;
+      align-items: center;}
+
+div { width:70px;
+	  height: 70px;
+	  border: 35px solid #8f8f8f;
+	  border-radius: 70px;
+	  margin: 2.5px;
+  }
+
+div:nth-child(1){ border-color:#714B67; }
+div:nth-child(2){ position:relative; }
+div:nth-child(2):before{ content:'';
+                         width:35px;
+                         height:110px;
+                         background:#8f8f8f;
+                         position:absolute;
+                         top:-70px;
+                         border-radius: 70px 70px 0 0 ;
+                         right:-35px; }
+
+</style>
+
+</head>
+<body>
+
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+
+</body>
+</html>

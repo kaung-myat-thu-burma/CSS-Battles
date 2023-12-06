@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Web Maker Logo</title>
+
+<style type="text/css">
+	
+body { background:#f2f2b6;
+       margin:0;
+       height:100vh;
+       display:flex;
+       justify-content:center;
+       align-items:center; }
+
+div { 
+      width:500px;
+      height:200px;
+      position:relative; }
+
+
+span:nth-child(1) { width:0;
+                    height:0;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(calc(-50% - 75px),-50%);
+                    border-top:200px solid #fd4602; 
+                    border-left:120px solid transparent; 
+                    border-right:120px solid transparent; }
+
+
+span:nth-child(1):before { width:0;
+                    height:0;
+                    content: '';
+                    position: absolute;
+                    top: -200px;
+                    left: -150px;
+                    border-top:200px solid #ff6d00; 
+                    border-left:120px solid transparent; 
+                    border-right:120px solid transparent; }
+
+
+
+
+span:nth-child(2) { width:0;
+                    height:0;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(calc(-50% + 75px),-50%);
+                    border-bottom:200px solid #ff6d00; 
+                    border-left:120px solid transparent; 
+                    border-right:120px solid transparent; }
+
+
+span:nth-child(2):before { width:0;
+                    height:0;
+                    content: '';
+                    position: absolute;
+                    bottom: -200px;
+                    right: -150px;
+                    border-bottom:200px solid #fd4602; 
+                    border-left:120px solid transparent; 
+                    border-right:120px solid transparent; }
+
+
+
+
+
+
+
+</style>
+
+</head>
+<body>
+
+<div>
+
+<span></span>
+<span></span>
+
+</div>
+
+
+
+</body>
+</html>

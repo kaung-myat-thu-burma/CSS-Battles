@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bee</title>
+
+<style type="text/css">
+	
+body { background:#998235;
+       margin:0;
+       height:100vh;
+       display:flex;
+       justify-content:center;
+       align-items:center;
+        }
+
+
+div { position:absolute;
+      width:250px;
+      height:125px;
+      background:#EFF33C; 
+      border-radius: 125px;}
+
+span:nth-child(1) { position:absolute;
+                    top:0;
+                    left:0;
+                    width: 250px;
+                    height: 125px;
+                    border-radius: 125px;
+                    overflow: hidden; }
+
+span:nth-child(1):before { content:'';
+                           width:40px;
+                           height:125px;
+                           background:#191919;
+                           position:absolute;
+                           left: 60px;
+                           top:0; }
+
+
+span:nth-child(1):after { content:'';
+                           width:40px;
+                           height:125px;
+                           background:#191919;
+                           position:absolute;
+                           left: 0px;
+                           top:0; }
+
+
+span:nth-child(2) { position:absolute;
+                    top:0;
+                    left:0;
+                    width:250px;
+                    height:125px;
+                     }
+
+span:nth-child(2):before { content:''; 
+                           width:40px;
+                           height:125px;
+                           background:#191919;
+                           top:0;
+                           left:120px;
+                           position:absolute; }
+
+
+span:nth-child(2):after { content:'';
+                          width:25px;
+                          height:25px;
+                          border-radius:50%;
+                          transform: translateY(-100%);
+                          background:#191919;
+                          left:190px;
+                          top:50%;position:absolute; }
+
+
+div:before { content:'';
+             position:absolute;
+             width:125px;
+             height:125px;
+             background:white;
+             top:-125px;
+             left: 0;
+             border-radius:125px 125px 0 125px;
+              }
+
+
+
+div:after {  content:'';
+             position:absolute;
+             width:125px;
+             height:125px;
+             background:white;
+             top:-125px;
+             right: 0;
+             border-radius:125px 125px  125px 0;
+              }
+</style>
+
+</head>
+<body>
+
+<div>
+
+<span></span>
+<span></span>
+
+</div>
+
+
+</body>
+</html>

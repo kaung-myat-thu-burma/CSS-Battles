@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Eye of Sauron</title>
+
+<style type="text/css">
+	
+body { background:#191210; }
+
+div { background::#191210;
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);
+      width:150px;
+      height:150px;
+      border:25px solid #ECA03D;
+      border-radius:50%; }
+
+div:before{ content:'';
+            width:90px;
+            height:90px;
+            border-radius:50%;
+            border:25px solid #ECA03D;
+            border-top-color: transparent;
+            border-left-color: transparent;
+            position:absolute;
+            transform: rotate(225deg);
+            left:100%;
+            top:0 }
+
+
+div:after { content: '';
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            border: 25px solid #ECA03D;
+            border-top-color: transparent;
+            border-left-color: transparent;
+            position: absolute;
+            right:100%;
+            bottom:0;
+            transform:rotate(45deg); }
+
+
+span {background: #84271C;
+	  width: 75px;
+	  height: 75px;
+	  border-radius: 50%;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%,-50%);
+
+
+
+</style>
+
+</head>
+<body>
+
+<div> <span> </span> </div>
+
+
+</body>
+</html>

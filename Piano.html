@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Piano</title>
+
+<style type="text/css">
+	
+body { background:#998235;
+       margin:0;
+       height:100vh;
+       display:flex;
+       justify-content:center;
+       align-items:center; }
+
+div { width:430px;
+      height:265px;
+      background:black;
+      display:flex;
+      justify-content:center;
+      align-items:flex-end; 
+      border-radius: 30px 30px 25px 25px;}
+
+span { width:50px;
+       height:185px;
+       background:white;
+       margin:5px 5px 10px 5px;
+       border-radius:12.5px;
+       position:relative; }
+
+span:nth-child(1):before,span:nth-child(2):before,
+span:nth-child(4):before,span:nth-child(5):before,
+span:nth-child(6):before { position:absolute;
+                           content:'';
+                           width:40px;
+                           height:92.5px;
+                           background:black;
+                           left:calc(50% + 5px);
+                           top:0;
+                           z-index:333; }
+
+
+</style>
+
+</head>
+<body>
+
+<div>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+</body>
+</html>

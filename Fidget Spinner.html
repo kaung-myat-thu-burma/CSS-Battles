@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Fidget Spinner</title>
+
+
+<style type="text/css">
+	
+body { margin:0;
+       background:#09042A;
+       height:100vh;
+       display:flex;
+       justify-content:center;
+       align-items:center; }
+
+
+div { width:500px;
+      height:145px;
+      background:#E78481;
+      border-radius:150px;
+      position:absolute; }
+
+ span:before { position: absolute;
+ 	    width: 150px;
+ 	    height: 150px;
+ 	    border:25px solid #09042A;
+ 	    background: #F5BB9C;
+ 	    content: '';
+ 	    top:50%;
+ 	    left: 50%;
+ 	    transform: translate(-50%,-115.5%);
+ 	    border-radius:50%;}
+
+span:after { position: absolute;
+ 	    width: 150px;
+ 	    height: 150px;
+ 	    border:25px solid #09042A;
+ 	    background: #F5BB9C;
+ 	    content: '';
+ 	    bottom:50%;
+ 	    left: 50%;
+ 	    transform: translate(-50%,115.5%);
+ 	    border-radius:50%;}
+
+
+
+div:before { content:''; 
+             width: 150px;
+             height: 150px;
+             border-radius: 50%;
+             background:#09042A;
+             border:25px solid #E78481; 
+             position: absolute;
+             left:0px;
+             z-index: 333;
+             top: 50%;
+             transform: translateY(-50%);}
+
+
+div:after  { content:''; 
+             width: 150px;
+             height: 150px;
+             border-radius: 50%;
+             background:#09042A; 
+             position: absolute;
+             border: 25px solid #E78481;
+             right:0px;
+             top: 50%;
+             transform: translateY(-50%);
+             z-index: 333;}
+
+
+
+</style>
+
+</head>
+<body>
+
+<div> <span> </span> </div>
+
+
+</body>
+</html>

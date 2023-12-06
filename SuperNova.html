@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>SuperNova</title>
+
+<style type="text/css">
+	
+body { background:#243D83;
+       margin:0;
+       height:100vh;
+       display:flex;
+       justify-content:center;
+       align-items:center;
+       overflow: hidden;
+}
+
+
+div { 
+      width:250px;
+      height:250px;
+      position:relative;
+      transform:rotate(45deg); }
+
+div:before { background: #eeb850;
+	         content: '';
+	         position: absolute;
+	         width: 125px;
+	         height: 125px;
+	         border-radius: 50%;
+	         top: 50%;
+	         left: 50%;
+	         transform: translate(-50%,-50%);}
+
+span { width:250px;
+       height:250px;
+       position:absolute;
+        }
+
+span:before { width:210px;
+       height:105px;
+       content: '';
+       background:#6592cf;
+       border-radius:200px 200px 0 0;
+       position: absolute;
+       left: 50%;
+       top: -105px;
+       transform: translate(-50%,0);
+        }
+
+span:nth-child(1){ transform:rotate(90deg); }
+span:nth-child(2){ transform:rotate(180deg); }
+span:nth-child(3){ transform:rotate(270deg); }
+span:nth-child(4){ transform:rotate(360deg); }
+
+
+
+
+
+</style>
+
+</head>
+<body>
+
+<div>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+
+
+</body>
+</html>

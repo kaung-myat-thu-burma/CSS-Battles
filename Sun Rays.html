@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sun Rays</title>
+
+<style type="text/css">
+	
+body { background:#D25B70;
+       margin:0;
+       height:100vh; }
+
+div { width:250px;
+      height:25px;
+      border-radius:25px;
+      background:#F2E09F; }
+
+section { background:black;
+          position:absolute;
+          top:50%;
+          left:50%;
+          transform:translate(-50%,-50%);
+          width:150px;
+          height:75px;
+          border-radius:50px 50px 0 0; }
+
+.one { position:absolute;
+       left:-250px;
+       bottom:0; }
+
+.two { position:absolute;
+       right:-250px;
+       bottom:0;
+        }
+
+.three { position:absolute;
+         left:-250px;
+         top: 50%;
+
+         transform: rotate(30deg) translateY(-50%);
+         transform-origin:right; }
+
+
+.four { position:absolute;
+        top:0;
+        left:-250px;
+        transform:rotate(60deg);
+        transform-origin:right; }
+
+.five {position: absolute;
+       top: -12.5px;
+       left: 50%;
+       transform: rotate(-90deg) ;
+       transform-origin: left;
+   }
+
+.six { position:absolute;
+       right:25%;
+       transform:rotate(-240deg);
+       transform-origin:right; }
+
+.seven { position:absolute;
+         bottom: calc(50% - 12.5px);
+         right: 25px;
+         transform:rotate(-210deg);
+         transform-origin:right; }
+
+
+
+
+</style>
+
+</head>
+<body>
+
+<section>
+<div class = "one"> </div>
+<div class = 'two'> </div>
+<div class = "three"></div>
+<div class = 'four'></div>
+<div class = "five"></div>
+<div class = "six"></div>
+<div class = 'seven'></div>
+</section>
+
+
+</body>
+</html>

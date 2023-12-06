@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Door Knock</title>
+
+<style type="text/css">
+	
+body { background:#191919;
+       margin:0;
+       height:100vh;
+       display:flex;
+       justify-content:center;
+       align-items:center; }
+
+div { position:absolute;
+      width:300px;
+      height:300px;
+      border-radius:50%;
+      background:#824B20;
+       }
+
+div:before { content:'';
+             top:50%;
+             left:50%;
+             width:200px;
+             height: 200px;
+             border-radius: 50%;
+             background: #E08027;
+             position: absolute;
+             transform: translate(-50%,-50%);
+              }
+
+span { position:absolute;
+       content:'';
+       top:50%;
+       left:50%;
+       transform:translate(-50%,-50%) rotate(45deg);
+       width: 175px;
+       height: 175px;
+       border-radius:100%;
+       border: 30px solid #FFF58F;
+       border-top-color: transparent;
+       border-left-color: transparent;
+
+        }
+
+span:before { content:'';
+              width:30px;
+              height:30px;
+              background:#FFF58F;
+              border-radius: 50%;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+               }
+
+span:after  { content:'';
+              width:30px;
+              height:30px;
+              background:#FFF58F;
+              border-radius: 50%;
+              position: absolute;
+              top: 0;
+              right: 0;
+               }
+
+
+
+
+
+
+
+</style>
+
+</head>
+<body>
+
+<div>
+
+<span></span>
+
+</div>
+
+
+</body>
+</html>

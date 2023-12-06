@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>PushOwl</title>
+
+<style type="text/css">
+	
+
+body { background:#191919;
+       margin:0;
+       height:100vh; }
+
+
+div:nth-child(1){ 
+	top: 50%;
+	left: 50%;
+	transform: translate(-92.5%,-50%);
+	background: #E08027;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 0 250px 250px 250px;
+
+}
+
+div:nth-child(1):before { content:'';
+                          width:190px;
+                          height:190px;
+                          background:#191919;
+                          top:50%;
+                          left:50%;
+                          transform:translate(-50%,-50%);
+                          border-radius:250px 250px 250px 250px;
+                          position:absolute; }
+
+
+div:nth-child(1):after { content:'';
+                         width:25px;
+                         height:25px;
+                         border:20px solid #E08027;
+                         border-left-color: transparent;
+                         border-top-color: transparent;
+                         border-radius:50%;
+                         position:absolute;
+                         top:50%;
+                         left:50%;
+                         transform:translate(-50%,-50%) rotate(-135deg); }
+
+
+
+div:nth-child(2){
+
+top: 50%;
+right: 50%;
+transform: translate(92.5%,-50%);
+background: #E08027;
+position: absolute;
+width: 250px;
+height: 250px;
+border-radius: 250px 0 250px 250px;
+border: 25px solid #191919;
+
+}
+
+div:nth-child(2):before { content:'';
+                          width:190px;
+                          height:190px;
+                          background:#191919;
+                          top:50%;
+                          left:50%;
+                          transform:translate(-50%,-50%);
+                          border-radius:250px 250px 250px 250px;
+                          position:absolute; }
+
+
+
+div:nth-child(2):after { content:'';
+                         width:25px;
+                         height:25px;
+                         border:20px solid #E08027;
+                         border-left-color: transparent;
+                         border-top-color: transparent;
+                         border-radius:50%;
+                         position:absolute;
+                         top:50%;
+                         left:50%;
+                         transform:translate(-50%,-50%) rotate(-135deg); }
+
+
+
+span { background:#E08027;
+      width:175px;
+      height:150px;
+      position:absolute;
+      transform:rotate(45deg) translate(-20%,-10%) ;
+      z-index: -333;
+      bottom:-30%;
+      right:-30%; }
+
+
+</style>
+
+
+</head>
+<body>
+
+<div>
+<span></span>
+</div>
+<div></div>
+
+</body>
+</html>

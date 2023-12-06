@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sunset</title>
+
+<style type="text/css">
+	
+body { background:#191919;
+       margin:0;
+       height:100vh;
+        }
+
+div { position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);
+
+      background:#F2AD43;
+      width:200px;
+      height:275px;
+      border-radius:300px 300px 75px 75px;
+      overflow:hidden; }
+
+
+div:before { content:'';
+             width:140px;
+             height:140px;
+             border-radius:0 175px 0 0;
+             background:#E08027;
+             position:absolute;
+             bottom:0;
+             left:0; }
+
+div:after { content:'';
+            width:140px;
+            height:140px;
+            border-radius: 175px 0  0 0px;
+            background:#824B20;
+            bottom:0;
+            right:0;
+            position:absolute; }
+
+span { background:#FFF58F;
+       width:75px;
+       height:75px;
+       border-radius:50%;
+       position:absolute;
+       top:45%;
+       left:30%;
+       z-index:-333; }
+
+
+</style>
+
+</head>
+<body>
+
+<div>
+
+<span></span>
+
+</div>
+
+
+
+</body>
+</html>

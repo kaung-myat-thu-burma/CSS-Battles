@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Command Key</title>
+
+<style type="text/css">
+	
+body { background:#191919;
+       margin:0;
+       height:100vh;
+       display:flex;
+       justify-content:center;
+       align-items:center; }
+
+div { width:150px;
+      height:150px;
+      border:20px solid #5DBCF9;
+      position:absolute; }
+
+div:before { width:100%;
+	         height: 100%;
+	         border: 20px solid #5DBCF9;
+	         position: absolute;
+	         border-radius: 150px 150px 0 150px ;
+	         content: '';
+	         transform: translate(-100%,-100%);
+  }
+
+div:after { content:'';
+            position:absolute;
+            width:100%;
+            height:100%;
+            top: 0;
+            left: 0;
+            border:20px solid #5DBCF9;
+            border-radius:150px 150px 150px 0;
+            transform:translate(calc(100% - 40px),-100%); }
+
+span { position:absolute;
+       top:0;
+       left:0; }
+
+span:nth-child(1) { content:'';
+                    width:150px;
+                    height:150px;
+                    border:20px solid #5DBCF9;
+                    bottom:50px;
+                    left:0;
+                    transform:translate(-100%,calc(100% - 40px)) ;
+                    border-radius: 150px 0 150px 150px;}
+
+
+
+span:nth-child(2) { content:'';
+                    width:100%;
+                    height:100%;
+                    border:20px solid #5DBCF9;
+                    bottom:0;
+                    right:0;
+                    transform:translate(calc(100% - 40px),calc(100% - 40px)) ;
+                    border-radius:0 150px 150px 150px;}
+
+
+</style>
+
+</head>
+<body>
+
+<div> <span> </span> 
+
+<span></span>
+
+</div>
+
+
+</body>
+</html>

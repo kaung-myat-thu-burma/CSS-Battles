@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Summit</title>
+
+<style type="text/css">
+	
+body { background:#191919;
+       margin:0;
+       height:100vh; }
+
+div:nth-child(1){ width:350px;
+                  height:350px;
+                  border-radius:50%;
+                  background:#f9e492;
+                  position:absolute;
+                  top:50%;
+                  left:50%;
+                  transform:translate(-50%,-50%); }
+
+div:nth-child(2){ width:0;
+                  height:0;
+                  border-bottom:250px solid #4f77ff;
+                  border-left:260px solid transparent;
+                  border-right:260px solid transparent;
+                  position:absolute;
+                  bottom:0;
+                  left:50%;
+                  transform:translateX(-50%);
+                   }
+
+div:nth-child(2):before { content:'';
+                          width:150px;
+                          height:150px;
+                          border-radius:0 0 150px 0;
+                          background:#191919;
+                          top:-0px;
+                          transform: rotate(45deg); 
+                          left:calc(50% - 25px);
+                          position: absolute;}
+
+
+
+
+</style>
+
+</head>
+<body>
+
+<div></div>
+<div></div>
+
+</body>
+</html>

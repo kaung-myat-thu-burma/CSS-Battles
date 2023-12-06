@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Corona Virus</title>
+
+<style type="text/css">
+	
+body { background:#1A4341;
+       margin:0;
+       height:100vh;
+       display:flex;
+       justify-content:center;
+       align-items:center; }
+
+div { position:absolute;
+      width:250px;
+      height:250px;
+      border-radius:50%;
+      background:#F3AC3AC;
+      transform:rotate(-90deg) }
+
+
+div:before { content:'';
+             width:17.5px;
+             height:400px;
+             background: #F3AC3A;
+             position: absolute;
+             border-radius: 25px;
+             top: calc(25px + 50%);
+             left: 50%;
+             transform: translate(-50%,-50%);}
+
+
+div:after  { content:'';
+             width:17.5px;
+             height:400px;
+             background: #F3AC3A;
+             position: absolute;
+             border-radius: 25px;
+             top: calc(25px + 50%);
+             left: 50%;
+             transform: translate(-50%,-50%) rotate(-120deg);}
+
+
+span:nth-child(1) {
+
+position:absolute;
+      width:250px;
+      height:250px;
+      border-radius:50%;
+      background:#F3AC3A;
+
+}
+
+
+span:nth-child(1):before { content:'';
+             width:17.5px;
+             height:400px;
+             background: #F3AC3A;
+             position: absolute;
+             border-radius: 25px;
+             top: calc(25px + 50%);
+             left: 50%;
+             transform: translate(-50%,-50%) rotate(-240deg);}
+
+
+
+span:nth-child(1):after { content:'';
+                          position:absolute;
+                          width:30px;
+                          height:30px;
+                          border-radius:50%;
+                          background:#998235;
+                          bottom:50px;
+                          right:50px; }
+
+
+
+
+span:nth-child(2) {
+
+position:absolute;
+      width:250px;
+      height:250px;
+      background: none;
+
+}
+
+
+span:nth-child(2):before { content:'';
+                           position:absolute;
+                           width:75px;
+                           height:75px;
+                           border-radius:50%;
+                           background:#998235;
+                           top:75px;
+                           right:50px;
+                           z-index:3; }
+
+
+
+span:nth-child(2):after  { content:'';
+                           position:absolute;
+                           width:60px;
+                           height:60px;
+                           border-radius:50%;
+                           background:#998235;
+                           top:70px;
+                           left:25px;
+                           z-index:3; }
+
+
+
+
+
+</style>
+
+</head>
+<body>
+
+<div>
+
+<span></span>
+<span></span>
+
+</div>
+
+
+
+</body>
+</html>

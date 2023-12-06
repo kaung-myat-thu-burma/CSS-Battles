@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Overlap</title>
+
+<style type="text/css">
+	
+
+body { background:#09042A;
+        }
+
+div { width:250px;
+      height:250px;
+      border-radius:50%; }
+div:nth-child(2) { position:absolute;
+                   top:calc(-125px + 50%);
+                   background: #E78481;
+                   left: calc(50% - 75px);
+                   overflow: hidden;
+
+
+                    }
+
+
+div:nth-child(1) { position:absolute;
+                   top:calc(50% - 125px);
+                   background:#7B3F61;
+                   left:calc(50% - 250px);
+                   overflow:hidden; }
+
+
+
+span { position:absolute;
+                   top:0;
+                   width: 100%;
+                   height: 100%;
+                   border-radius: 50%;
+                   background:#09042A;
+                   left:175px;
+                   z-index: 333;
+
+
+                    }
+
+
+
+
+
+</style>
+
+</head>
+<body>
+
+
+<div>
+
+<span> </span>
+
+ </div>
+<div> 
+
+
+</div>
+
+
+
+</body>
+</html>

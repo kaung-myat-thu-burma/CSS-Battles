@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Rose</title>
+
+<style type="text/css">
+	
+body { background:#191919;
+       margin:0;
+       height:100vh; }
+
+div { background: #4F77FF;
+	  width:150px;
+	  height:75px;
+	  border-radius: 0 0 200px 200px ;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%,-50%);
+	  z-index: 50; 
+}
+
+
+div:before { background: #F9E492;
+	         content: '';
+	         width: 50px;
+
+	         height: 50px;
+	         position: absolute;
+	         bottom: -28px;
+	         left: 50%;
+	         transform: translate(-50%,0);
+	         border-radius: 50%;
+	         z-index: -50;
+	         
+
+}
+
+
+
+
+div:after { background:#F9E492;
+	         content: '';
+	         width: 20px;
+
+	         height:140px;
+	         position: absolute;
+	         bottom: -140px;
+
+	         left: 50%;
+	         transform: translate(-50%,0);
+	         border-radius: 25px;
+	         z-index: -70;
+
+}
+
+
+
+
+
+
+
+
+
+span { position:absolute;
+       width:220px;
+       height:50px;
+       background:#4F77FF;
+       top:-67.5px;
+       left:50%;
+       transform:translate(-50%,0);
+       border-radius:10px 10px 50px 50px;
+       z-index:150; }
+
+
+span:before {  content: '';position:absolute;
+                    width:150px;
+                    height:50px;
+                    background:#4F77FF;
+                    border:17.5px solid #191919;
+                    top:-15px;
+                    left:50%;
+                    transform:translate(-50%,-50%);
+                    border-radius:27.5px 27.5px 70px 70px;
+                    z-index:175; }
+
+span:after { content:'';
+             width:50px;
+             height:50px;
+             border-radius:50%;
+             background:#4F77FF;
+             border:17.5px solid #191919;
+             position:absolute;
+             top: -90px;
+             left: 50%;
+             transform:translate(-50%,0) ;
+             z-index:200 ;          }
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div> <span></span> </div>
+
+
+
+
+
+
+</body>
+</html>

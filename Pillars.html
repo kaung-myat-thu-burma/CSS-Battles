@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pillars</title>
+
+<style type="text/css">
+	
+body { background:#191919;
+       margin:0;
+       height:100vh;
+       display:flex;
+       justify-content:center;
+       align-items:center; }
+
+div { width:300px;
+      height:300px;
+      background:#4F77FF;
+      position:absolute; }
+
+span { background: #F9E492;
+       width:100px;
+       height:100px;
+       position:absolute; 
+       border: 35px solid #191919;
+       border-radius: 100%;}
+
+span:nth-child(1) { top:-66.5px;
+                     left:-66.5px; }
+
+
+span:nth-child(2){ top:-66.5px;
+                   right:-66.5px; }
+
+span:nth-child(3) { bottom:-66.5px;
+                    left:-66.5px; }
+
+span:nth-child(4) { bottom:-66.5px;
+                    right:-66.5px; }
+
+
+span:before { content:'';
+              position:absolute;
+              background:#4F77FF;
+              width: 70px;
+              height: 70px;
+              border-radius:50%;
+              z-index:333; }
+
+
+span:nth-child(1):before { top:0;
+                           left:0; }
+
+
+span:nth-child(2):before { top:0;
+                           right:0; }
+span:nth-child(3):before { bottom:0;
+                           left:0; }
+span:nth-child(4):before { bottom:0;
+                           right:0; }
+
+
+
+
+
+
+</style>
+
+</head>
+<body>
+
+<div>
+
+<span> </span>
+<span> </span>
+<span> </span>
+<span> </span>
+
+</div>
+
+</body>
+</html>

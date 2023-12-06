@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ukulele</title>
+
+<style type="text/css">
+	
+
+body { background:#f3ac3c;
+       margin:0;
+       height:100vh;}
+
+div { width:275px;
+      height:275px;
+      background:#998235;
+      border-radius:50%;
+      top:calc(50%  - 137.5px);
+      left:100px;
+      position:absolute; }
+
+div:before { content:'';
+             width:25px;
+             height:100px;
+             background:#1a4341;
+             position:absolute;
+             top:50%;
+             border-radius: 15px;
+             left:100px;
+             transform:translateY(-50%); }
+
+
+span:nth-child(1){ width:225px;
+                   height:225px;
+                   position:absolute;
+                   left: 175px;
+                   top:calc(50% - 112.5px);
+z-index:333; }
+
+
+span:nth-child(3){ width:225px;
+                   height:225px;
+                   background:#998235;
+                   border-radius:50%;
+                   position:absolute;
+                   left: 175px;
+                   top:calc(50% - 112.5px);
+z-index:333; }
+
+span:nth-child(3):before { position:absolute;
+                           top:50%;
+                           left:50%;
+                           transform:translate(-50%,-50%);
+                           width:85px;
+                           height:85px;
+                           background: #1a4341;
+                           border-radius:50%;
+                           border:10px solid #f3ac3c;
+                           content:''; }
+
+span:nth-child(1):after { position:absolute;
+                          width:300px;
+                          height:55px;
+                          background:#1a4341;
+                          left:215px;
+                          top: calc(50% - 27.5px);
+                          content:''; }
+
+span:nth-child(2){ width:110px;
+                   height:80px;
+                   background:#998235;
+                   position:absolute;
+                   left:650px;
+                   top:50%;
+                   transform:translate(0,-50%);
+                   border-radius:25px;
+                   z-index:3333; }
+
+
+span:nth-child(2):before { content:'';
+                           position:absolute;
+                           width:60px;
+                           height:12px;
+                           border-radius: 15px;
+                           background:#1a4341;
+                           bottom:50%;
+                           left:50%;
+                           transform:translate(-50%,-100%);
+                            }
+
+
+
+span:nth-child(2):after { content:'';
+                           position:absolute;
+                           width:60px;
+                           height:12px;
+                           border-radius: 15px;
+                           background:#1a4341;
+                           top:50%;
+                           left:50%;
+                           transform:translate(-50%,100%);
+                            }
+
+
+</style>
+
+
+</head>
+<body>
+
+<div><span></span>
+	<span></span>
+	<span></span>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Break the Chain</title>
+
+<style type="text/css">
+	
+body { background:#6592CF;
+       margin:0;
+       height:100vh;
+       display:flex;
+       position:relative;}
+
+
+span { width:20px;
+       height:100px;
+       background:#243D83;
+       position:absolute;
+       top:50%;
+       transform:translateY(-50%);
+       z-index:99; }
+
+span:before { content:'';
+              width:40px;
+              height:40px;
+              border-radius:50%;
+              background:#243D83;
+              position:absolute;
+              left:50%;
+              transform:translate(-50%,-37.5px) }
+
+div { position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background:#243D83; }
+
+
+span:nth-child(1) { z-index:3333; }
+span:nth-child(1):after { content:'';
+                           width:100px;
+                           height:100px;
+                           background:#EEB850;
+                           border-radius:50%;
+                           position:absolute;
+                           left:50%;
+                           transform:translate(-50%,50%);
+                           z-index: -333;
+                           top: calc(-120% );
+                           }
+span:nth-child(2):after { content:'';
+                           width:175px;
+                           height:175px;
+                           background:#EEB850;
+                           border-radius:50%;
+                           position:absolute;
+                           left:50%;
+                           transform:translate(-50%,50%);
+                           z-index: -333;
+                           top: calc(-225%);
+                           }
+
+span:nth-child(3):after { content:'';
+                           width:100px;
+                           height:100px;
+                           background:#EEB850;
+                           border-radius:50%;
+                           position:absolute;
+                           left:50%;
+                           transform:translate(-50%,50%);
+                           z-index: -333;
+                           top: calc(-120% );
+                           }
+
+
+
+span:nth-child(1){ left:15%; }
+span:nth-child(2){ left:25%; }
+span:nth-child(3){ left:35%; }
+span:nth-child(4){ left:55%; }
+span:nth-child(5){ left:65%; }
+span:nth-child(6){ left:75%; }
+span:nth-child(7){ left:85%; }
+
+
+
+
+
+</style>
+
+</head>
+<body>
+
+<span><div class = "one"> </div></span>
+<span><div class = "two"> </div></span>
+<span><div class = "three"> </div></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+
+
+</body>
+</html>
